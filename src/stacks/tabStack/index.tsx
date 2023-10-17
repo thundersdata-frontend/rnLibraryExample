@@ -1,18 +1,24 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { helpers, Text, useTheme } from '@td-design/react-native';
 
-import { Homepage } from '@/modules/homepage/screens';
+
+
+// import { Homepage } from '@/modules/homepage/screens';
+import LibraryDemo from '@/modules/homepage/screens/libraryDemo'
 import { Mine } from '@/modules/user/screens';
 import { AppTheme } from '@/theme';
 
+
+
 import Icon, { IconNames } from '../../components/Icon';
+
 
 const { px } = helpers;
 const Tab = createBottomTabNavigator();
 const tabItems: { name: string; title?: string; label: string; icon: IconNames; component: () => JSX.Element }[] = [
   {
-    name: 'Homepage',
-    component: Homepage,
+    name: 'LibraryDemo',
+    component: LibraryDemo,
     label: '首页',
     icon: 'sms',
     title: '首页',
@@ -30,7 +36,7 @@ export const TabStack = () => {
   const theme = useTheme<AppTheme>();
   return (
     <Tab.Navigator
-      initialRouteName="Homepage"
+      initialRouteName="LibraryDemo"
       screenOptions={{
         // 懒加载TabScreen
         lazy: true,
