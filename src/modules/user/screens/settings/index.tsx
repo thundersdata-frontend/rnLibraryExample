@@ -1,7 +1,6 @@
-import Image from 'react-native-fast-image';
-
 import { NavigationProp, useNavigation } from '@react-navigation/native';
 import { ActionSheet, Avatar, helpers, Input, List, Modal, Text, WingBlank } from '@td-design/react-native';
+import { Image } from 'expo-image';
 import { useAtomValue } from 'jotai';
 
 import { userInfoAtom } from '@/atoms';

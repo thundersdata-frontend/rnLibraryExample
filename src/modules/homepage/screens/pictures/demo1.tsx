@@ -1,7 +1,7 @@
 import { ScrollView } from 'react-native';
-import Image from 'react-native-fast-image';
 
 import { Divider, Text, WhiteSpace, WingBlank } from '@td-design/react-native';
+import { Image } from 'expo-image';
 
 import { Container } from '@/components/Container';
 

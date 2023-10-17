@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import Image from 'react-native-fast-image';
 
 import { Box, Flex, helpers, SvgIcon, useTheme } from '@td-design/react-native';
+import { Image } from 'expo-image';
 
 import { AppTheme } from '@/theme';
 
